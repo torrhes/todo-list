@@ -1,11 +1,13 @@
+/* eslint-disable react/no-children-prop */
+/* eslint-disable react/react-in-jsx-scope */
 import { Header } from "../templates/Header/Header";
-import todoLogo from "../../assets/svg/logo-app.svg";
+import todoLogo from "../assets/svg/logo-app.svg";
 import { InfoContainer } from "../templates/InfoContainer/InfoContainer";
-import { NewTaskForm } from "../molecules/NewTaskForm/NewTaskForm";
-import { TaskList } from "../organisms/TasksList/TaskList";
 import { useEffect, useState } from "react";
-import { TaskCounterItem } from "../molecules/TaskCounterItem/TaskCounterItem";
 import { Container } from "../templates/Container/Container";
+import { NewTaskForm } from "../components/molecules/NewTaskForm/NewTaskForm";
+import { TaskCounterItem } from "../components/molecules/TaskCounterItem/TaskCounterItem";
+import { TaskList } from "../components/organisms/TasksList/TaskList";
 const LOCAL_STORAGE_KEY = "todo:savedAddTasks";
 
 export interface TasksData {

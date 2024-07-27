@@ -1,8 +1,4 @@
-<h1 align="center" style="text-align: center;">
-  <img alt="Logo do ToDo" src="./src/assets/svg/app-logo.svg" style="vertical-align: middle;">
-</h1>
-
-> FrontEnd Developer - Test
+<h1>ToDo App</h1>
 
 <p align="center">
   <a href="#project">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -19,7 +15,7 @@
 
 Interactive to-do list application. The project structure follows the Atomic Design methodology, ensuring a scalable and maintainable codebase.<br/>
 
-![ToDo List](./src/assets/img/todo-list.png)
+![ToDo List](./src/assets/svg/img/todo-list.png)
 
 Atomic Design Principles
 The project is organized based on Atomic Design , which divide the UI into five levels of components:
