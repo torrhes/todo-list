@@ -3,7 +3,7 @@ import styles from "./Tasks.module.scss";
 import { Circle, PencilSimple, Trash } from "@phosphor-icons/react";
 import Input from "../../atoms/Input/Input";
 import Button from "../../atoms/Button/Button";
-import { TasksData } from "../../pages/Todo";
+import { TasksData } from "../../../pages/Todo";
 
 interface TaskProps {
   task: TasksData;

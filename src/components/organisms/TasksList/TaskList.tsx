@@ -1,7 +1,8 @@
+/* eslint-disable react/react-in-jsx-scope */
 import styles from "./TaskList.module.scss";
 import { Task } from "../Tasks/Tasks";
-import { TasksData } from "../../pages/Todo";
 import { Emptylist } from "../../molecules/EmptyList/EmptyList";
+import { TasksData } from "../../../pages/Todo";
 
 interface TaskListProps {
   tasks: TasksData[];
