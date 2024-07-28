@@ -1,5 +1,5 @@
-import Badge from "../../atoms/Badge/Badge";
-import styles from "./TaskCounterItem.module.scss";
+import Badge from '../../atoms/Badge/Badge';
+import styles from './TaskCounterItem.module.scss';
 interface TaskCounterItemProps {
   title?: string;
   children?: React.ReactNode;

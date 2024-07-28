@@ -1,5 +1,5 @@
-import { Clipboard } from "@phosphor-icons/react";
-import styles from "./EmptyList.module.scss";
+import { Clipboard } from '@phosphor-icons/react';
+import styles from './EmptyList.module.scss';
 export function Emptylist() {
   return (
     <section className={styles.empty}>

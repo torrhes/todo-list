@@ -1,14 +1,12 @@
-/* eslint-disable react/no-children-prop */
-/* eslint-disable react/react-in-jsx-scope */
-import { Header } from "../templates/Header/Header";
-import todoLogo from "../assets/svg/logo-app.svg";
-import { InfoContainer } from "../templates/InfoContainer/InfoContainer";
-import { useEffect, useState } from "react";
-import { Container } from "../templates/Container/Container";
-import { NewTaskForm } from "../components/molecules/NewTaskForm/NewTaskForm";
-import { TaskCounterItem } from "../components/molecules/TaskCounterItem/TaskCounterItem";
-import { TaskList } from "../components/organisms/TasksList/TaskList";
-const LOCAL_STORAGE_KEY = "todo:savedAddTasks";
+import todoLogo from '@assets/svg/logo-app.svg';
+import { NewTaskForm } from '@molecules/NewTaskForm/NewTaskForm';
+import { TaskCounterItem } from '@molecules/TaskCounterItem/TaskCounterItem';
+import { TaskList } from '@organisms/TasksList/TaskList';
+import { Container } from '@templates/Container/Container';
+import { Header } from '@templates/Header/Header';
+import { InfoContainer } from '@templates/InfoContainer/InfoContainer';
+import { useEffect, useState } from 'react';
+const LOCAL_STORAGE_KEY = 'todo:savedAddTasks';
 
 export interface TasksData {
   id: string;
@@ -42,8 +40,8 @@ export function Todo() {
       {
         id: crypto.randomUUID(),
         title: taskTitle,
-        isCompleted: false,
-      },
+        isCompleted: false
+      }
     ]);
   }
 
@@ -57,7 +55,7 @@ export function Todo() {
       if (task.id === taskId) {
         return {
           ...task,
-          isCompleted: !task.isCompleted,
+          isCompleted: !task.isCompleted
         };
       }
       return task;
@@ -70,7 +68,7 @@ export function Todo() {
       if (task.id === taskId) {
         return {
           ...task,
-          title: newTitle,
+          title: newTitle
         };
       }
       return task;
@@ -80,15 +78,14 @@ export function Todo() {
   return (
     <>
       <Header>
-        <img src={todoLogo} />
+        <img src={todoLogo} alt="logo app" />
         <NewTaskForm onAddTask={addNewTask} />
       </Header>
       <InfoContainer>
-        <TaskCounterItem title="Tasks created" children={tasksAmount} />
-        <TaskCounterItem
-          title="Completed"
-          children={`${completedTasks} de ${tasksAmount}`}
-        />
+        <TaskCounterItem title="Tasks created">{tasksAmount}</TaskCounterItem>
+        <TaskCounterItem title="Completed">
+          {completedTasks} de {tasksAmount}
+        </TaskCounterItem>
       </InfoContainer>
       <Container>
         <TaskList

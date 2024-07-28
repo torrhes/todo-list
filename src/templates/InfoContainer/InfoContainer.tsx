@@ -1,4 +1,4 @@
-import styles from "./InfoContainer.module.scss";
+import styles from './InfoContainer.module.scss';
 
 interface InfoContainerProps {
   children?: React.ReactNode;

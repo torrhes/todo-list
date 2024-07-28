@@ -1,21 +1,21 @@
-import { Plus } from "@phosphor-icons/react";
-import styles from "./NewTaskForm.module.scss";
-import { ChangeEvent, FormEvent, useState } from "react";
-import Input from "../../atoms/Input/Input";
-import Button from "../../atoms/Button/Button";
+import { Plus } from '@phosphor-icons/react';
+import styles from './NewTaskForm.module.scss';
+import { ChangeEvent, FormEvent, useState } from 'react';
+import Input from '@atoms/Input/Input';
+import Button from '@atoms/Button/Button';
 
 interface Props {
   onAddTask: (taskTitle: string) => void;
 }
 
 export function NewTaskForm({ onAddTask }: Props) {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState('');
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
 
     onAddTask(title);
-    setTitle("");
+    setTitle('');
   }
 
   function onChangeTitle(event: ChangeEvent<HTMLInputElement>) {

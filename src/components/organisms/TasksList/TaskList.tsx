@@ -1,8 +1,7 @@
-/* eslint-disable react/react-in-jsx-scope */
-import styles from "./TaskList.module.scss";
-import { Task } from "../Tasks/Tasks";
-import { Emptylist } from "../../molecules/EmptyList/EmptyList";
-import { TasksData } from "../../../pages/Todo";
+import { Emptylist } from '@molecules/EmptyList/EmptyList';
+import { Task } from '@organisms/Tasks/Tasks';
+import { TasksData } from '@pages/Todo';
+import styles from './TaskList.module.scss';
 
 interface TaskListProps {
   tasks: TasksData[];
@@ -11,12 +10,7 @@ interface TaskListProps {
   onEdit: (taskId: string, newTitle: string) => void;
 }
 
-export function TaskList({
-  tasks,
-  onComplete,
-  onDelete,
-  onEdit,
-}: TaskListProps) {
+export function TaskList({ tasks, onComplete, onDelete, onEdit }: TaskListProps) {
   return (
     <section className={styles.tasks}>
       <div className={styles.list}>

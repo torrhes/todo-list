@@ -1,4 +1,4 @@
-import styles from "./Badge.module.scss";
+import styles from './Badge.module.scss';
 interface BadgeProps {
   children?: React.ReactNode;
 }
