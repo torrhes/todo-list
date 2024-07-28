@@ -8,17 +8,7 @@
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "noEmit": true,
-    "paths": {
-      "src/*": ["./src/*"],
-      "components/*":["./src/components/*"],
-      "assets": ["./src/assets/*"],
-      "lib": ["./src/lib/*"],
-      "atoms": ["/src/components/atoms"],
-      "molecules": ["/src/components/molecules"],
-      "organisms": ["/src/components/organisms"],
-      "pages": ["/src/components/pages"],
-      "template": ["/src/components/template"],
-    }
+   
   },
   "include": ["vite.config.ts"]
 }

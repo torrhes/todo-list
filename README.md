@@ -35,7 +35,7 @@ Pages: Specific instances of templates filled with real content.
 
 <h2 id="usage">Usage</h2>
 
-The application is available for use [here](https://todo-list-nine-ebon.vercel.app/).
+The application is available for use [here](https://todo-list-nayara-torres-projects.vercel.app/).
 
 1. Clone the project:
 

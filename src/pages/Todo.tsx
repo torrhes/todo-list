@@ -84,7 +84,7 @@ export function Todo() {
       <InfoContainer>
         <TaskCounterItem title="Tasks created">{tasksAmount}</TaskCounterItem>
         <TaskCounterItem title="Completed">
-          {completedTasks} de {tasksAmount}
+          {completedTasks} of {tasksAmount}
         </TaskCounterItem>
       </InfoContainer>
       <Container>
